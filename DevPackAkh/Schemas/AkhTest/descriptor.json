@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "152cbd7c-56f0-41e3-8294-8ef525d6333f",
+    "Name": "AkhTest",
+    "ModifiedOnUtc": "\/Date(1708875350000)\/",
+    "ManagerName": "ProcessSchemaManager",
+    "Caption": "Бизнес-процесс 1",
+    "DependsOn": []
+  }
+}

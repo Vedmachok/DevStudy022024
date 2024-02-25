@@ -1,0 +1,17 @@
+﻿{
+  "Descriptor": {
+    "UId": "0a838832-6b90-9bd1-59b4-97fb4a1213de",
+    "Name": "DevPackAkh",
+    "Type": 1,
+    "ModifiedOnUtc": "\/Date(1708874190000)\/",
+    "Maintainer": "Customer",
+    "ProjectPath": "Files/DevPackAkh.csproj",
+    "DependsOn": [
+      {
+        "UId": "fe1effeb-74f2-42c5-b5e1-dfe0313b86bf",
+        "PackageVersion": "7.8.0",
+        "Name": "Studio"
+      }
+    ]
+  }
+}
