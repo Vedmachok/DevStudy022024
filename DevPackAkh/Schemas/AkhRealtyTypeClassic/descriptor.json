@@ -1,0 +1,14 @@
+﻿{
+  "Descriptor": {
+    "UId": "6c5ad465-e03b-416c-9828-ce7f94968252",
+    "Name": "AkhRealtyTypeClassic",
+    "ModifiedOnUtc": "\/Date(1708883051000)\/",
+    "Parent": {
+      "UId": "11ab4bcb-9b23-4b6d-9c86-520fae925d75",
+      "Name": "BaseLookup"
+    },
+    "ManagerName": "EntitySchemaManager",
+    "Caption": "RealtyType(ClassicUI)",
+    "DependsOn": []
+  }
+}
