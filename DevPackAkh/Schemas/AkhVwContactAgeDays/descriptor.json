@@ -4,6 +4,7 @@
     "Name": "AkhVwContactAgeDays",
     "ModifiedOnUtc": "\/Date(1709057194000)\/",
     "ManagerName": "EntitySchemaManager",
-    "Caption": "Вік контакту в днях"
+    "Caption": "Contact age in days",
+    "DependsOn": []
   }
 }
