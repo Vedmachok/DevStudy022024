@@ -1,0 +1,9 @@
+﻿{
+  "Descriptor": {
+    "UId": "dd934e34-6ae2-4a11-baee-a05d14d4e578",
+    "Name": "AkhVwContactAgeDays",
+    "ModifiedOnUtc": "\/Date(1709057194000)\/",
+    "ManagerName": "EntitySchemaManager",
+    "Caption": "Вік контакту в днях"
+  }
+}

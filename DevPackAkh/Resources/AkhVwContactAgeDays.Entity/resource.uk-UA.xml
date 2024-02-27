@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="uk-UA">
+	<Group Type="String">
+		<Items>
+			<Item Name="Caption" Value="Вік контакту в днях" />
+			<Item Name="Columns.AkhAgeDays.Caption" Value="Age in Days" />
+			<Item Name="Columns.AkhBirthDate.Caption" Value="BirthDate" />
+			<Item Name="Columns.AkhContact.Caption" Value="Contact" />
+			<Item Name="Columns.AkhId.Caption" Value="Id" />
+			<Item Name="Columns.AkhName.Caption" Value="Name" />
+		</Items>
+	</Group>
+</Resources>

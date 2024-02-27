@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="en-US">
+	<Group Type="String">
+		<Items>
+			<Item Name="Caption" Value="Contact age in days" />
+			<Item Name="Columns.AkhAgeDays.Caption" Value="Age in Days" />
+			<Item Name="Columns.AkhBirthDate.Caption" Value="BirthDate" />
+			<Item Name="Columns.AkhContact.Caption" Value="Contact" />
+			<Item Name="Columns.AkhId.Caption" Value="Id" />
+			<Item Name="Columns.AkhName.Caption" Value="Name" />
+			<Item Name="EventsProcessSchema.Caption" Value="Бизнес-процесс" />
+		</Items>
+	</Group>
+</Resources>
