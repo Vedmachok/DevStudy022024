@@ -1,0 +1,13 @@
+﻿{
+  "Descriptor": {
+    "UId": "666e90a3-952c-41b9-ac8c-61f3b8ac49c8",
+    "Name": "AkhRealtyFreedomUI_ListPage",
+    "ModifiedOnUtc": "\/Date(1709379446000)\/",
+    "Parent": {
+      "UId": "3f1f3f38-a0a4-4549-b895-249fb08f554a",
+      "Name": "ListFreedomTemplate"
+    },
+    "ManagerName": "ClientUnitSchemaManager",
+    "Caption": "Страница с реестром Realty FreedomUI"
+  }
+}

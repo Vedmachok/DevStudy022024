@@ -1,0 +1,14 @@
+﻿{
+  "Descriptor": {
+    "UId": "07c4289d-6f40-4cea-9473-46c5976afd2f",
+    "Name": "AkhRealtyOfferTypeFreedomUi",
+    "ModifiedOnUtc": "\/Date(1709377426000)\/",
+    "Parent": {
+      "UId": "11ab4bcb-9b23-4b6d-9c86-520fae925d75",
+      "Name": "BaseLookup"
+    },
+    "ManagerName": "EntitySchemaManager",
+    "Caption": "Realty Offer Type (FreedomUI)",
+    "DependsOn": []
+  }
+}

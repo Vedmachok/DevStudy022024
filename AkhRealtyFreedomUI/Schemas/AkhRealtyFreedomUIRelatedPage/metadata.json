@@ -1,0 +1,28 @@
+{
+  "MetaData": {
+    "Schema": {
+      "ManagerName": "AddonSchemaManager",
+      "UId": "6a1ce7e1-3794-4e54-8b8f-84cc6071282a",
+      "A2": "AkhRealtyFreedomUIRelatedPage",
+      "A5": "6f71e54c-1960-40c9-94f6-073fd67699ab",
+      "B1": [],
+      "B2": [],
+      "B3": [],
+      "B6": "5530927f-22ea-e7c9-4ccf-506d3a6c2ed2",
+      "B8": "0.0.0.0",
+      "AD1": "d2d07120-54ae-4f21-9648-071de278b190",
+      "AD2": "EntitySchemaManager",
+      "AD3": "RelatedPage",
+      "AD5": "3a2d6f51-1bfc-4c17-aacb-b53de4866b7c",
+      "AD4": {
+        "Pages": [
+          {
+            "UId": "60799343-017a-4c22-a9f0-183cd954f480",
+            "PageSchemaUId": "6d67e79f-6696-4cd9-964a-9fa49f0421b2",
+            "IsDefault": true
+          }
+        ]
+      }
+    }
+  }
+}

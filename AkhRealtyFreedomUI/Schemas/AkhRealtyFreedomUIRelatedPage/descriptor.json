@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "6a1ce7e1-3794-4e54-8b8f-84cc6071282a",
+    "Name": "AkhRealtyFreedomUIRelatedPage",
+    "ModifiedOnUtc": "\/Date(1709370870000)\/",
+    "ManagerName": "AddonSchemaManager",
+    "Caption": "Realty FreedomUI (Page settings)",
+    "DependsOn": []
+  }
+}

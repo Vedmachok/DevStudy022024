@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="uk-UA">
+	<Group Type="String">
+		<Items>
+			<Item Name="Caption" Value="Realty FreedomUI" />
+			<Item Name="Columns.AkhArea.Caption" Value="Площа, кв" />
+			<Item Name="Columns.AkhComment.Caption" Value="Коментар" />
+			<Item Name="Columns.AkhCurrency.Caption" Value="Валюта" />
+			<Item Name="Columns.AkhManager.Caption" Value="Менеджер" />
+			<Item Name="Columns.AkhName.Caption" Value="Назва" />
+			<Item Name="Columns.AkhNumber.Caption" Value="Номер" />
+			<Item Name="Columns.AkhOfferType.Caption" Value="Тип пропозиції" />
+			<Item Name="Columns.AkhPrice.Caption" Value="Ціна" />
+			<Item Name="Columns.AkhType.Caption" Value="Тип" />
+		</Items>
+	</Group>
+</Resources>

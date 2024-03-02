@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="ru-RU">
+	<Group Type="String">
+		<Items>
+			<Item Name="Caption" Value="Страница записи Realty FreedomUI" />
+			<Item Name="LocalizableStrings.addRecord_3a63x4h_caption.Value" Value="Добавить" />
+			<Item Name="LocalizableStrings.addRecord_9qtx7ay_caption.Value" Value="Добавить" />
+			<Item Name="LocalizableStrings.addRecord_evfg3st_caption.Value" Value="Добавить" />
+			<Item Name="LocalizableStrings.addRecord_lozrpec_caption.Value" Value="Добавить" />
+		</Items>
+	</Group>
+</Resources>

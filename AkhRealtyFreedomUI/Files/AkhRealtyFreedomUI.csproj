@@ -301,8 +301,8 @@
 		</Reference>
 	</ItemGroup>
 	<ItemGroup Label="Package References">
-		<Reference Include="Terrasoft.Configuration">
-			<HintPath>$(RelativePkgFolderPath)/../bin/Terrasoft.Configuration.dll</HintPath>
+		<Reference Include="CrtCore">
+			<HintPath>$(RelativePkgFolderPath)/CrtCore/$(StandalonePackageAssemblyPath)/CrtCore.dll</HintPath>
 			<SpecificVersion>False</SpecificVersion>
 			<Private>False</Private>
 		</Reference>
@@ -406,11 +406,6 @@
 			<SpecificVersion>False</SpecificVersion>
 			<Private>False</Private>
 		</Reference>
-		<Reference Include="CrtCore">
-			<HintPath>$(RelativePkgFolderPath)/CrtCore/$(StandalonePackageAssemblyPath)/CrtCore.dll</HintPath>
-			<SpecificVersion>False</SpecificVersion>
-			<Private>False</Private>
-		</Reference>
 		<Reference Include="CrtProductivityApp">
 			<HintPath>$(RelativePkgFolderPath)/CrtProductivityApp/$(StandalonePackageAssemblyPath)/CrtProductivityApp.dll</HintPath>
 			<SpecificVersion>False</SpecificVersion>
@@ -434,8 +429,9 @@
 	</ItemGroup>
 	<ItemGroup Label="Standalone package external assembly references" />
 	<ItemGroup Label="Entity Files">
-		<Compile Remove="$(RelativePkgFolderPath)/DevPackAkh/Schemas/AkhRealtyTypeClassic/AkhRealtyTypeClassic.cs" Condition="Exists('$(RelativePkgFolderPath)/DevPackAkh/Schemas/AkhRealtyTypeClassic/AkhRealtyTypeClassic.cs')" />
-		<Compile Remove="$(RelativePkgFolderPath)/DevPackAkh/Schemas/AkhVwContactAgeDays/AkhVwContactAgeDays.cs" Condition="Exists('$(RelativePkgFolderPath)/DevPackAkh/Schemas/AkhVwContactAgeDays/AkhVwContactAgeDays.cs')" />
+		<Compile Remove="$(RelativePkgFolderPath)/AkhRealtyFreedomUI/Schemas/AkhRealtyTypeFreedomUi/AkhRealtyTypeFreedomUi.cs" Condition="Exists('$(RelativePkgFolderPath)/AkhRealtyFreedomUI/Schemas/AkhRealtyTypeFreedomUi/AkhRealtyTypeFreedomUi.cs')" />
+		<Compile Remove="$(RelativePkgFolderPath)/AkhRealtyFreedomUI/Schemas/AkhRealtyFreedomUI/AkhRealtyFreedomUI.cs" Condition="Exists('$(RelativePkgFolderPath)/AkhRealtyFreedomUI/Schemas/AkhRealtyFreedomUI/AkhRealtyFreedomUI.cs')" />
+		<Compile Remove="$(RelativePkgFolderPath)/AkhRealtyFreedomUI/Schemas/AkhRealtyOfferTypeFreedomUi/AkhRealtyOfferTypeFreedomUi.cs" Condition="Exists('$(RelativePkgFolderPath)/AkhRealtyFreedomUI/Schemas/AkhRealtyOfferTypeFreedomUi/AkhRealtyOfferTypeFreedomUi.cs')" />
 	</ItemGroup>
 	<ItemGroup Label="3rd Party References"></ItemGroup>
 	<Target Name="Paths" BeforeTargets="BeforeCompile">

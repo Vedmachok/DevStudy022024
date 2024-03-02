@@ -1,0 +1,19 @@
+<Project>
+	<ItemGroup Condition="'$(PkgPath)' != ''">
+		<Compile Remove="$(PkgPath)/AkhRealtyFreedomUI/Assemblies/**" />
+		<Compile Remove="$(PkgPath)/AkhRealtyFreedomUI/Data/**" />
+		<Compile Remove="$(PkgPath)/AkhRealtyFreedomUI/SqlScripts/**" />
+		<Compile Remove="$(PkgPath)/AkhRealtyFreedomUI/Schemas\**" />
+		<Compile Remove="$(PkgPath)/AkhRealtyFreedomUI/Resources/**" />
+		<EmbeddedResource Remove="$(PkgPath)/AkhRealtyFreedomUI/Assemblies/**" />
+		<EmbeddedResource Remove="$(PkgPath)/AkhRealtyFreedomUI/Data/**" />
+		<EmbeddedResource Remove="$(PkgPath)/AkhRealtyFreedomUI/SqlScripts/**" />
+		<EmbeddedResource Remove="$(PkgPath)/AkhRealtyFreedomUI/Schemas/**" />
+		<EmbeddedResource Remove="$(PkgPath)/AkhRealtyFreedomUI/Resources/**" />
+		<None Remove="$(PkgPath)/AkhRealtyFreedomUI/Assemblies/**" />
+		<None Remove="$(PkgPath)/AkhRealtyFreedomUI/Data/**" />
+		<None Remove="$(PkgPath)/AkhRealtyFreedomUI/SqlScripts/**" />
+		<None Remove="$(PkgPath)/AkhRealtyFreedomUI/Schemas/**" />
+		<None Remove="$(PkgPath)/AkhRealtyFreedomUI/Resources/**" />
+  </ItemGroup>
+</Project>

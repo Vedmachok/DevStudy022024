@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="en-US">
+	<Group Type="String">
+		<Items>
+			<Item Name="Caption" Value="Realty FreedomUI list page" />
+			<Item Name="LocalizableStrings.LookupQuickFilterByTag_config_caption.Value" Value="Tag filter" />
+			<Item Name="LocalizableStrings.LookupQuickFilterByTag_config_hint.Value" Value="Select tag to filter" />
+			<Item Name="LocalizableStrings.RefreshButtonCaption.Value" Value="Refresh" />
+			<Item Name="LocalizableStrings.SearchFilter_placeholder.Value" Value="Search" />
+		</Items>
+	</Group>
+</Resources>
