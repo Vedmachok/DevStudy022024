@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="uk-UA">
+	<Group Type="String">
+		<Items>
+			<Item Name="Caption" Value="Перегляд нереухомості (FreedomUI)" />
+			<Item Name="Columns.AkhComment.Caption" Value="Коментар" />
+			<Item Name="Columns.AkhOwner.Caption" Value="Власник" />
+			<Item Name="Columns.AkhParentRealty.Caption" Value="Батьківська нерухомість" />
+			<Item Name="Columns.AkhPotentialCustomer.Caption" Value="Потенційний клієнт" />
+			<Item Name="Columns.AkhVisitDateAndTime.Caption" Value="Дата і час візиту" />
+		</Items>
+	</Group>
+</Resources>

@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "6443557a-f18b-4fcc-9e41-8efaa922fb82",
+    "Name": "AkhRealtyVisitFreedomUiRelatedPage",
+    "ModifiedOnUtc": "\/Date(1709486626000)\/",
+    "ManagerName": "AddonSchemaManager",
+    "Caption": "Realty Visit (FreedomUI) (Настройка страницы)",
+    "DependsOn": []
+  }
+}

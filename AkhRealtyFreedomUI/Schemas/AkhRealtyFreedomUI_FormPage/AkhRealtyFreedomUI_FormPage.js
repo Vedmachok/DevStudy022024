@@ -481,6 +481,287 @@ define("AkhRealtyFreedomUI_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, functi
 				"parentName": "GeneralInfoTab",
 				"propertyName": "items",
 				"index": 1
+			},
+			{
+				"operation": "insert",
+				"name": "ExpansionPanel_xdhjsi2",
+				"values": {
+					"type": "crt.ExpansionPanel",
+					"tools": [],
+					"items": [],
+					"title": "#ResourceString(ExpansionPanel_xdhjsi2_title)#",
+					"toggleType": "default",
+					"togglePosition": "before",
+					"expanded": true,
+					"labelColor": "#000000",
+					"fullWidthHeader": false,
+					"titleWidth": 20,
+					"padding": {
+						"top": "small",
+						"bottom": "small",
+						"left": "none",
+						"right": "none"
+					},
+					"fitContent": true,
+					"visible": true,
+					"alignItems": "stretch"
+				},
+				"parentName": "GeneralInfoTab",
+				"propertyName": "items",
+				"index": 2
+			},
+			{
+				"operation": "insert",
+				"name": "GridContainer_j7p5e5y",
+				"values": {
+					"type": "crt.GridContainer",
+					"rows": "minmax(max-content, 24px)",
+					"columns": [
+						"minmax(32px, 1fr)"
+					],
+					"gap": {
+						"columnGap": "large",
+						"rowGap": 0
+					},
+					"styles": {
+						"overflow-x": "hidden"
+					},
+					"items": []
+				},
+				"parentName": "ExpansionPanel_xdhjsi2",
+				"propertyName": "tools",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "FlexContainer_mf6tbd6",
+				"values": {
+					"type": "crt.FlexContainer",
+					"direction": "row",
+					"gap": "none",
+					"alignItems": "center",
+					"items": [],
+					"layoutConfig": {
+						"colSpan": 1,
+						"column": 1,
+						"row": 1,
+						"rowSpan": 1
+					}
+				},
+				"parentName": "GridContainer_j7p5e5y",
+				"propertyName": "items",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "GridDetailAddBtn_abd6rt2",
+				"values": {
+					"type": "crt.Button",
+					"caption": "#ResourceString(GridDetailAddBtn_abd6rt2_caption)#",
+					"icon": "add-button-icon",
+					"iconPosition": "only-icon",
+					"color": "default",
+					"size": "medium",
+					"clicked": {
+						"request": "crt.CreateRecordRequest",
+						"params": {
+							"entityName": "AkhRealtyVisitFreedomUi",
+							"defaultValues": [
+								{
+									"attributeName": "AkhParentRealty",
+									"value": "$Id"
+								}
+							]
+						}
+					},
+					"visible": true,
+					"clickMode": "default"
+				},
+				"parentName": "FlexContainer_mf6tbd6",
+				"propertyName": "items",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "GridDetailRefreshBtn_s8lym86",
+				"values": {
+					"type": "crt.Button",
+					"caption": "#ResourceString(GridDetailRefreshBtn_s8lym86_caption)#",
+					"icon": "reload-button-icon",
+					"iconPosition": "only-icon",
+					"color": "default",
+					"size": "medium",
+					"clicked": {
+						"request": "crt.LoadDataRequest",
+						"params": {
+							"config": {
+								"loadType": "reload"
+							},
+							"dataSourceName": "GridDetail_3eti2hdDS"
+						}
+					}
+				},
+				"parentName": "FlexContainer_mf6tbd6",
+				"propertyName": "items",
+				"index": 1
+			},
+			{
+				"operation": "insert",
+				"name": "GridDetailSettingsBtn_58kt39v",
+				"values": {
+					"type": "crt.Button",
+					"caption": "#ResourceString(GridDetailSettingsBtn_58kt39v_caption)#",
+					"icon": "actions-button-icon",
+					"iconPosition": "only-icon",
+					"color": "default",
+					"size": "medium",
+					"clickMode": "menu",
+					"menuItems": []
+				},
+				"parentName": "FlexContainer_mf6tbd6",
+				"propertyName": "items",
+				"index": 2
+			},
+			{
+				"operation": "insert",
+				"name": "GridDetailExportDataBtn_63yp0ug",
+				"values": {
+					"type": "crt.MenuItem",
+					"caption": "#ResourceString(GridDetailExportDataBtn_63yp0ug_caption)#",
+					"icon": "export-button-icon",
+					"color": "default",
+					"size": "medium",
+					"clicked": {
+						"request": "crt.ExportDataGridToExcelRequest",
+						"params": {
+							"viewName": "GridDetail_3eti2hd"
+						}
+					}
+				},
+				"parentName": "GridDetailSettingsBtn_58kt39v",
+				"propertyName": "menuItems",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "GridDetailImportDataBtn_7g5rfbh",
+				"values": {
+					"type": "crt.MenuItem",
+					"caption": "#ResourceString(GridDetailImportDataBtn_7g5rfbh_caption)#",
+					"icon": "import-button-icon",
+					"color": "default",
+					"size": "medium",
+					"clicked": {
+						"request": "crt.ImportDataRequest",
+						"params": {
+							"entitySchemaName": "AkhRealtyVisitFreedomUi"
+						}
+					}
+				},
+				"parentName": "GridDetailSettingsBtn_58kt39v",
+				"propertyName": "menuItems",
+				"index": 1
+			},
+			{
+				"operation": "insert",
+				"name": "GridDetailSearchFilter_iwqbiu9",
+				"values": {
+					"type": "crt.SearchFilter",
+					"placeholder": "#ResourceString(GridDetailSearchFilter_iwqbiu9_placeholder)#",
+					"iconOnly": true,
+					"targetAttributes": [
+						"GridDetail_3eti2hd"
+					]
+				},
+				"parentName": "FlexContainer_mf6tbd6",
+				"propertyName": "items",
+				"index": 3
+			},
+			{
+				"operation": "insert",
+				"name": "GridContainer_m5b6e2h",
+				"values": {
+					"type": "crt.GridContainer",
+					"rows": "minmax(max-content, 32px)",
+					"columns": [
+						"minmax(32px, 1fr)",
+						"minmax(32px, 1fr)"
+					],
+					"gap": {
+						"columnGap": "large",
+						"rowGap": 0
+					},
+					"styles": {
+						"overflow-x": "hidden"
+					},
+					"items": []
+				},
+				"parentName": "ExpansionPanel_xdhjsi2",
+				"propertyName": "items",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "GridDetail_3eti2hd",
+				"values": {
+					"type": "crt.DataGrid",
+					"layoutConfig": {
+						"colSpan": 2,
+						"column": 1,
+						"row": 1,
+						"rowSpan": 6
+					},
+					"features": {
+						"rows": {
+							"selection": {
+								"enable": true,
+								"multiple": true
+							}
+						}
+					},
+					"items": "$GridDetail_3eti2hd",
+					"visible": true,
+					"fitContent": true,
+					"primaryColumnName": "GridDetail_3eti2hdDS_Id",
+					"columns": [
+						{
+							"id": "c1da515b-63ec-21e7-b026-d613a36684b5",
+							"code": "GridDetail_3eti2hdDS_AkhVisitDateAndTime",
+							"path": "AkhVisitDateAndTime",
+							"caption": "#ResourceString(GridDetail_3eti2hdDS_AkhVisitDateAndTime)#",
+							"dataValueType": 7,
+							"width": 181
+						},
+						{
+							"id": "27ffc5d1-067e-f194-f22e-61b1c9420e43",
+							"code": "GridDetail_3eti2hdDS_AkhPotentialCustomer",
+							"path": "AkhPotentialCustomer",
+							"caption": "#ResourceString(GridDetail_3eti2hdDS_AkhPotentialCustomer)#",
+							"dataValueType": 10,
+							"referenceSchemaName": "Contact",
+							"width": 185
+						},
+						{
+							"id": "d59d735c-0716-0ee0-2e8c-49ab380f0c32",
+							"code": "GridDetail_3eti2hdDS_AkhOwner",
+							"path": "AkhOwner",
+							"caption": "#ResourceString(GridDetail_3eti2hdDS_AkhOwner)#",
+							"dataValueType": 10,
+							"referenceSchemaName": "Contact",
+							"width": 129
+						},
+						{
+							"id": "58188c10-a72b-e5c5-1baf-f5cf6c7a0393",
+							"code": "GridDetail_3eti2hdDS_AkhComment",
+							"path": "AkhComment",
+							"caption": "#ResourceString(GridDetail_3eti2hdDS_AkhComment)#",
+							"dataValueType": 28
+						}
+					]
+				},
+				"parentName": "GridContainer_m5b6e2h",
+				"propertyName": "items",
+				"index": 0
 			}
 		]/**SCHEMA_VIEW_CONFIG_DIFF*/,
 		viewModelConfigDiff: /**SCHEMA_VIEW_MODEL_CONFIG_DIFF*/[
@@ -498,11 +779,29 @@ define("AkhRealtyFreedomUI_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, functi
 					"PDS_AkhArea_fktcfnj": {
 						"modelConfig": {
 							"path": "PDS.AkhArea"
+						},
+						"validators": {
+							"MySuperValidator": {
+								"type": "akh.AkhValidator",
+								"params": {
+									"minValue": 0,
+									"message": "#ResourceString(AreaCannotBeLess)#"
+								}
+							}
 						}
 					},
 					"PDS_AkhPrice_xolbiws": {
 						"modelConfig": {
 							"path": "PDS.AkhPrice"
+						},
+						"validators": {
+							"MySuperValidator": {
+								"type": "akh.AkhValidator",
+								"params": {
+									"minValue": 0,
+									"message": "#ResourceString(PriceCannotBeLess)#"
+								}
+							}
 						}
 					},
 					"PDS_AkhCurrency_ns8unwj": {
@@ -544,6 +843,49 @@ define("AkhRealtyFreedomUI_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, functi
 						"modelConfig": {
 							"path": "PDS.AkhOfferTypeAkhCommissionPercent"
 						}
+					},
+					"GridDetail_3eti2hd": {
+						"isCollection": true,
+						"modelConfig": {
+							"path": "GridDetail_3eti2hdDS",
+							"sortingConfig": {
+								"default": [
+									{
+										"direction": "asc",
+										"columnName": "AkhComment"
+									}
+								]
+							}
+						},
+						"viewModelConfig": {
+							"attributes": {
+								"GridDetail_3eti2hdDS_AkhVisitDateAndTime": {
+									"modelConfig": {
+										"path": "GridDetail_3eti2hdDS.AkhVisitDateAndTime"
+									}
+								},
+								"GridDetail_3eti2hdDS_AkhPotentialCustomer": {
+									"modelConfig": {
+										"path": "GridDetail_3eti2hdDS.AkhPotentialCustomer"
+									}
+								},
+								"GridDetail_3eti2hdDS_AkhOwner": {
+									"modelConfig": {
+										"path": "GridDetail_3eti2hdDS.AkhOwner"
+									}
+								},
+								"GridDetail_3eti2hdDS_AkhComment": {
+									"modelConfig": {
+										"path": "GridDetail_3eti2hdDS.AkhComment"
+									}
+								},
+								"GridDetail_3eti2hdDS_Id": {
+									"modelConfig": {
+										"path": "GridDetail_3eti2hdDS.Id"
+									}
+								}
+							}
+						}
 					}
 				}
 			},
@@ -564,7 +906,15 @@ define("AkhRealtyFreedomUI_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, functi
 				"operation": "merge",
 				"path": [],
 				"values": {
-					"primaryDataSourceName": "PDS"
+					"primaryDataSourceName": "PDS",
+					"dependencies": {
+						"GridDetail_3eti2hdDS": [
+							{
+								"attributePath": "AkhParentRealty",
+								"relationPath": "PDS.Id"
+							}
+						]
+					}
 				}
 			},
 			{
@@ -585,6 +935,27 @@ define("AkhRealtyFreedomUI_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, functi
 							}
 						},
 						"scope": "page"
+					},
+					"GridDetail_3eti2hdDS": {
+						"type": "crt.EntityDataSource",
+						"scope": "viewElement",
+						"config": {
+							"entitySchemaName": "AkhRealtyVisitFreedomUi",
+							"attributes": {
+								"AkhVisitDateAndTime": {
+									"path": "AkhVisitDateAndTime"
+								},
+								"AkhPotentialCustomer": {
+									"path": "AkhPotentialCustomer"
+								},
+								"AkhOwner": {
+									"path": "AkhOwner"
+								},
+								"AkhComment": {
+									"path": "AkhComment"
+								}
+							}
+						}
 					}
 				}
 			}
@@ -596,10 +967,18 @@ define("AkhRealtyFreedomUI_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, functi
 				/* Implementation of the custom query handler. */
 				handler: async (request, next) => {
 					this.console.log("Button works...");
-					Terrasoft.showInformation("My button was pressed.");
+					//Terrasoft.showInformation("My button was pressed.");
 					var price = await request.$context.PDS_AkhPrice_xolbiws;
 					this.console.log("Price = " + price);
 					request.$context.PDS_AkhPrice_xolbiws = price * 0.2;
+					/*lookup value operation*/
+					//debugger;
+					var realtyTypeObject = await request.$context.PDS_AkhType_16yayrw;
+					if(realtyTypeObject){
+						var typeName = realtyTypeObject.displayValue;
+						var typeId = realtyTypeObject.value;
+						this.console.log("Type Id: " +  typeId + ", type name: " + typeName);
+					}
 					/* Call the next handler if it exists and return its result. */
 					return next?.handle(request);
 				}
@@ -622,6 +1001,38 @@ define("AkhRealtyFreedomUI_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, functi
 			}
 		]/**SCHEMA_HANDLERS*/,
 		converters: /**SCHEMA_CONVERTERS*/{}/**SCHEMA_CONVERTERS*/,
-		validators: /**SCHEMA_VALIDATORS*/{}/**SCHEMA_VALIDATORS*/
+		validators: /**SCHEMA_VALIDATORS*/{
+			/* The validator type must contain a vendor prefix.
+			Format the validator type in PascalCase. */
+			"akh.AkhValidator": {
+				validator: function (config) {
+					return function (control) {
+						let value = control.value;
+						let minValue = config.minValue;
+						let valueIsCorrect = value >= minValue;
+						var result;
+						if (valueIsCorrect) {
+							result = null;
+						} else {
+							result = {
+								"akh.AkhValidator": { 
+									message: config.message
+								}
+							};
+						}
+						return result;
+					};
+				},
+				params: [
+					{
+						name: "minValue"
+					},
+					{
+						name: "message"
+					}
+				],
+				async: false
+			}
+		}/**SCHEMA_VALIDATORS*/
 	};
 });

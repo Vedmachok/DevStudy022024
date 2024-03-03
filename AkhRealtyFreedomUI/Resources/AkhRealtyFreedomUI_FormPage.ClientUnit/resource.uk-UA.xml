@@ -3,6 +3,9 @@
 	<Group Type="String">
 		<Items>
 			<Item Name="Caption" Value="Realty FreedomUI form page" />
+			<Item Name="LocalizableStrings.AreaCannotBeLess.Value" Value="Площа не може бути менше 100 кв" />
+			<Item Name="LocalizableStrings.ExpansionPanel_xdhjsi2_title.Value" Value="Перегляди" />
+			<Item Name="LocalizableStrings.PriceCannotBeLess.Value" Value="Ціна не може бути нижче 50,0" />
 		</Items>
 	</Group>
 </Resources>

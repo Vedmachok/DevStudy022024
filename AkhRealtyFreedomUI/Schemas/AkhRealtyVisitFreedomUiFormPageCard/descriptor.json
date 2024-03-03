@@ -1,0 +1,13 @@
+﻿{
+  "Descriptor": {
+    "UId": "129c0f26-9ea8-4450-97ed-352b173a50a5",
+    "Name": "AkhRealtyVisitFreedomUiFormPageCard",
+    "ModifiedOnUtc": "\/Date(1709486359000)\/",
+    "Parent": {
+      "UId": "ecdcc8ff-272c-4957-9381-7d74ce17e140",
+      "Name": "BaseMiniPageTemplate"
+    },
+    "ManagerName": "ClientUnitSchemaManager",
+    "Caption": "Realty Visit (FreedomUI) form page card"
+  }
+}

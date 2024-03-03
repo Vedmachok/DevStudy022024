@@ -1,0 +1,35 @@
+﻿{
+  "MetaData": {
+    "Schema": {
+      "ManagerName": "AddonSchemaManager",
+      "UId": "6443557a-f18b-4fcc-9e41-8efaa922fb82",
+      "A2": "AkhRealtyVisitFreedomUiRelatedPage",
+      "A5": "70167f66-6be3-4fc5-a472-97981dfe2b96",
+      "B1": [],
+      "B2": [],
+      "B3": [],
+      "B6": "0c77ae7e-b8db-4cb6-ac37-b4348c6aa091",
+      "B8": "8.1.1.3635",
+      "AD1": "e4acd6d1-12e7-49b8-8718-fdc1304896b4",
+      "AD2": "EntitySchemaManager",
+      "AD3": "RelatedPage",
+      "AD5": "3a2d6f51-1bfc-4c17-aacb-b53de4866b7c",
+      "AD4": {
+  "Pages": [
+    {
+      "UId": "253a8f69-9dfe-da62-d2bf-6a3369925a63",
+      "PageSchemaUId": "129c0f26-9ea8-4450-97ed-352b173a50a5",
+      "IsDefault": true,
+      "IsSspDefault": false,
+      "Actions": {
+        "Add": false
+      },
+      "Role": "a29a3ba5-4b0d-de11-9a51-005056c00008",
+      "TypeColumnValue": null
+    }
+  ],
+  "TypeColumnUId": null
+}
+    }
+  }
+}

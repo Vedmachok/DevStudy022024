@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="ru-RU">
+	<Group Type="String">
+		<Items>
+			<Item Name="Caption" Value="Realty Visit (FreedomUI) form page card" />
+			<Item Name="LocalizableStrings.addRecord_2traxgm_caption.Value" Value="Добавить" />
+			<Item Name="LocalizableStrings.addRecord_k241192_caption.Value" Value="Добавить" />
+		</Items>
+	</Group>
+</Resources>

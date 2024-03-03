@@ -432,6 +432,7 @@
 		<Compile Remove="$(RelativePkgFolderPath)/AkhRealtyFreedomUI/Schemas/AkhRealtyTypeFreedomUi/AkhRealtyTypeFreedomUi.cs" Condition="Exists('$(RelativePkgFolderPath)/AkhRealtyFreedomUI/Schemas/AkhRealtyTypeFreedomUi/AkhRealtyTypeFreedomUi.cs')" />
 		<Compile Remove="$(RelativePkgFolderPath)/AkhRealtyFreedomUI/Schemas/AkhRealtyFreedomUI/AkhRealtyFreedomUI.cs" Condition="Exists('$(RelativePkgFolderPath)/AkhRealtyFreedomUI/Schemas/AkhRealtyFreedomUI/AkhRealtyFreedomUI.cs')" />
 		<Compile Remove="$(RelativePkgFolderPath)/AkhRealtyFreedomUI/Schemas/AkhRealtyOfferTypeFreedomUi/AkhRealtyOfferTypeFreedomUi.cs" Condition="Exists('$(RelativePkgFolderPath)/AkhRealtyFreedomUI/Schemas/AkhRealtyOfferTypeFreedomUi/AkhRealtyOfferTypeFreedomUi.cs')" />
+		<Compile Remove="$(RelativePkgFolderPath)/AkhRealtyFreedomUI/Schemas/AkhRealtyVisitFreedomUi/AkhRealtyVisitFreedomUi.cs" Condition="Exists('$(RelativePkgFolderPath)/AkhRealtyFreedomUI/Schemas/AkhRealtyVisitFreedomUi/AkhRealtyVisitFreedomUi.cs')" />
 	</ItemGroup>
 	<ItemGroup Label="3rd Party References"></ItemGroup>
 	<Target Name="Paths" BeforeTargets="BeforeCompile">

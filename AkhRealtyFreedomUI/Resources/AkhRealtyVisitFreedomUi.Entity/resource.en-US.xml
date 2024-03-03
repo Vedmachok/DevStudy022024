@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="en-US">
+	<Group Type="String">
+		<Items>
+			<Item Name="Caption" Value="Realty Visit (FreedomUI)" />
+			<Item Name="Columns.AkhComment.Caption" Value="Comment" />
+			<Item Name="Columns.AkhOwner.Caption" Value="Owner" />
+			<Item Name="Columns.AkhParentRealty.Caption" Value="Parent Realty" />
+			<Item Name="Columns.AkhPotentialCustomer.Caption" Value="Potential customer" />
+			<Item Name="Columns.AkhVisitDateAndTime.Caption" Value="Visit Date and Time" />
+		</Items>
+	</Group>
+</Resources>

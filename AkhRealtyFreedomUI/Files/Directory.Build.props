@@ -3,5 +3,6 @@
 		<Compile Include="$(PkgPath)/AkhRealtyFreedomUI/Schemas/AkhRealtyTypeFreedomUi/AkhRealtyTypeFreedomUi.cs" Condition="Exists('$(PkgPath)/AkhRealtyFreedomUI/Schemas/AkhRealtyTypeFreedomUi/AkhRealtyTypeFreedomUi.cs')" />
 		<Compile Include="$(PkgPath)/AkhRealtyFreedomUI/Schemas/AkhRealtyFreedomUI/AkhRealtyFreedomUI.cs" Condition="Exists('$(PkgPath)/AkhRealtyFreedomUI/Schemas/AkhRealtyFreedomUI/AkhRealtyFreedomUI.cs')" />
 		<Compile Include="$(PkgPath)/AkhRealtyFreedomUI/Schemas/AkhRealtyOfferTypeFreedomUi/AkhRealtyOfferTypeFreedomUi.cs" Condition="Exists('$(PkgPath)/AkhRealtyFreedomUI/Schemas/AkhRealtyOfferTypeFreedomUi/AkhRealtyOfferTypeFreedomUi.cs')" />
+		<Compile Include="$(PkgPath)/AkhRealtyFreedomUI/Schemas/AkhRealtyVisitFreedomUi/AkhRealtyVisitFreedomUi.cs" Condition="Exists('$(PkgPath)/AkhRealtyFreedomUI/Schemas/AkhRealtyVisitFreedomUi/AkhRealtyVisitFreedomUi.cs')" />
 	</ItemGroup>
 </Project>
