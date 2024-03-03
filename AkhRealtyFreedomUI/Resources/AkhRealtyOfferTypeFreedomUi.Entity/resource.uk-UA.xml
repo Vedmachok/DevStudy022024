@@ -3,6 +3,7 @@
 	<Group Type="String">
 		<Items>
 			<Item Name="Caption" Value="Тип пропозиції нерухомості (FreedomUI)" />
+			<Item Name="Columns.AkhCommissionPercent.Caption" Value="Відсотки комісії від 0 до 100" />
 		</Items>
 	</Group>
 </Resources>

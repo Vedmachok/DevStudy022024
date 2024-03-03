@@ -5,6 +5,7 @@
 			<Item Name="Caption" Value="Realty FreedomUI" />
 			<Item Name="Columns.AkhArea.Caption" Value="Площа, кв" />
 			<Item Name="Columns.AkhComment.Caption" Value="Коментар" />
+			<Item Name="Columns.AkhCommission.Caption" Value="Комісія" />
 			<Item Name="Columns.AkhCurrency.Caption" Value="Валюта" />
 			<Item Name="Columns.AkhManager.Caption" Value="Менеджер" />
 			<Item Name="Columns.AkhName.Caption" Value="Назва" />

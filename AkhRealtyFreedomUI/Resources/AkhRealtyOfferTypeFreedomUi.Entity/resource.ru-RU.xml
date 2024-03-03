@@ -3,7 +3,7 @@
 	<Group Type="String">
 		<Items>
 			<Item Name="Caption" Value="Realty Offer Type (FreedomUI)" />
-			<Item Name="EventsProcessSchema.Caption" Value="Бизнес-процесс" />
+			<Item Name="Columns.AkhCommissionPercent.Caption" Value="Commission percent, from 0 to 100" />
 		</Items>
 	</Group>
 </Resources>

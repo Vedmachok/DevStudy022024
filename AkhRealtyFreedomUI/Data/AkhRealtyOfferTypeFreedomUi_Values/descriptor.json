@@ -2,7 +2,7 @@
   "Descriptor": {
     "UId": "07c4289d-6f40-4cea-9473-46c5976afd2f",
     "Name": "AkhRealtyOfferTypeFreedomUi_Values",
-    "ModifiedOnUtc": "\/Date(1709379639000)\/",
+    "ModifiedOnUtc": "\/Date(1709464009000)\/",
     "InstallType": 0,
     "Schema": {
       "UId": "07c4289d-6f40-4cea-9473-46c5976afd2f",
@@ -43,6 +43,13 @@
         "IsKey": false,
         "ColumnName": "Description",
         "DataTypeValueUId": "ddb3a1ee-07e8-4d62-b7a9-d0e618b00fbd"
+      },
+      {
+        "ColumnUId": "cb115031-6544-c7d7-4e8b-bc3f85806f3a",
+        "IsForceUpdate": true,
+        "IsKey": false,
+        "ColumnName": "AkhCommissionPercent",
+        "DataTypeValueUId": "5cc8060d-6d10-4773-89fc-8c12d6f659a6"
       }
     ]
   }

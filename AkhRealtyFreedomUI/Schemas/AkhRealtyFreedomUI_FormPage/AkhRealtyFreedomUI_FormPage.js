@@ -1,4 +1,3 @@
-/* jshint esversion:11*/
 define("AkhRealtyFreedomUI_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEMA_ARGS*/()/**SCHEMA_ARGS*/ {
 	return {
 		viewConfigDiff: /**SCHEMA_VIEW_CONFIG_DIFF*/[
@@ -166,10 +165,10 @@ define("AkhRealtyFreedomUI_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, functi
 				"name": "PushMeButton",
 				"values": {
 					"type": "crt.Button",
-					"caption": "#ResourceString(Button_tk957ro_caption)#",
+					"caption": "#ResourceString(PushMeButton_caption)#",
 					"color": "accent",
 					"disabled": false,
-					"size": "medium",
+					"size": "small",
 					"iconPosition": "left-icon",
 					"visible": true,
 					"clicked": {
@@ -203,11 +202,32 @@ define("AkhRealtyFreedomUI_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, functi
 			},
 			{
 				"operation": "insert",
-				"name": "AkhPrice",
+				"name": "AkhNumber",
 				"values": {
 					"layoutConfig": {
 						"column": 1,
 						"row": 2,
+						"colSpan": 1,
+						"rowSpan": 1
+					},
+					"type": "crt.Input",
+					"label": "$Resources.Strings.PDS_AkhNumber_bk9brfk",
+					"labelPosition": "auto",
+					"control": "$PDS_AkhNumber_bk9brfk",
+					"multiline": false,
+					"readonly": true
+				},
+				"parentName": "SideAreaProfileContainer",
+				"propertyName": "items",
+				"index": 1
+			},
+			{
+				"operation": "insert",
+				"name": "AkhPrice",
+				"values": {
+					"layoutConfig": {
+						"column": 1,
+						"row": 3,
 						"colSpan": 1,
 						"rowSpan": 1
 					},
@@ -218,7 +238,7 @@ define("AkhRealtyFreedomUI_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, functi
 				},
 				"parentName": "SideAreaProfileContainer",
 				"propertyName": "items",
-				"index": 1
+				"index": 2
 			},
 			{
 				"operation": "insert",
@@ -226,7 +246,7 @@ define("AkhRealtyFreedomUI_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, functi
 				"values": {
 					"layoutConfig": {
 						"column": 1,
-						"row": 3,
+						"row": 4,
 						"colSpan": 1,
 						"rowSpan": 1
 					},
@@ -240,7 +260,7 @@ define("AkhRealtyFreedomUI_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, functi
 				},
 				"parentName": "SideAreaProfileContainer",
 				"propertyName": "items",
-				"index": 2
+				"index": 3
 			},
 			{
 				"operation": "insert",
@@ -265,7 +285,7 @@ define("AkhRealtyFreedomUI_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, functi
 				"values": {
 					"layoutConfig": {
 						"column": 1,
-						"row": 4,
+						"row": 5,
 						"colSpan": 1,
 						"rowSpan": 1
 					},
@@ -276,7 +296,27 @@ define("AkhRealtyFreedomUI_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, functi
 				},
 				"parentName": "SideAreaProfileContainer",
 				"propertyName": "items",
-				"index": 3
+				"index": 4
+			},
+			{
+				"operation": "insert",
+				"name": "AkhCommission",
+				"values": {
+					"layoutConfig": {
+						"column": 1,
+						"row": 6,
+						"colSpan": 1,
+						"rowSpan": 1
+					},
+					"type": "crt.NumberInput",
+					"label": "$Resources.Strings.PDS_AkhCommission_b9uqxnj",
+					"labelPosition": "auto",
+					"control": "$PDS_AkhCommission_b9uqxnj",
+					"readonly": true
+				},
+				"parentName": "SideAreaProfileContainer",
+				"propertyName": "items",
+				"index": 5
 			},
 			{
 				"operation": "insert",
@@ -358,34 +398,10 @@ define("AkhRealtyFreedomUI_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, functi
 			},
 			{
 				"operation": "insert",
-				"name": "AkhComment",
-				"values": {
-					"layoutConfig": {
-						"column": 1,
-						"row": 2,
-						"colSpan": 1,
-						"rowSpan": 1
-					},
-					"type": "crt.Input",
-					"label": "$Resources.Strings.PDS_AkhComment_5cps2zw",
-					"labelPosition": "auto",
-					"control": "$PDS_AkhComment_5cps2zw",
-					"multiline": false,
-					"visible": true,
-					"readonly": false,
-					"placeholder": "",
-					"tooltip": ""
-				},
-				"parentName": "GeneralInfoTabContainer",
-				"propertyName": "items",
-				"index": 2
-			},
-			{
-				"operation": "insert",
 				"name": "AkhManager",
 				"values": {
 					"layoutConfig": {
-						"column": 2,
+						"column": 1,
 						"row": 2,
 						"colSpan": 1,
 						"rowSpan": 1
@@ -400,7 +416,7 @@ define("AkhRealtyFreedomUI_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, functi
 				},
 				"parentName": "GeneralInfoTabContainer",
 				"propertyName": "items",
-				"index": 3
+				"index": 2
 			},
 			{
 				"operation": "insert",
@@ -421,24 +437,50 @@ define("AkhRealtyFreedomUI_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, functi
 			},
 			{
 				"operation": "insert",
-				"name": "AkhNumber",
+				"name": "AkhCommissionPercent",
 				"values": {
 					"layoutConfig": {
 						"column": 2,
-						"row": 3,
+						"row": 2,
+						"colSpan": 1,
+						"rowSpan": 1
+					},
+					"type": "crt.NumberInput",
+					"label": "$Resources.Strings.PDS_AkhOfferTypeAkhCommissionPercent",
+					"control": "$PDS_AkhOfferTypeAkhCommissionPercent",
+					"readonly": true,
+					"placeholder": "",
+					"labelPosition": "auto",
+					"tooltip": "",
+					"visible": false
+				},
+				"parentName": "GeneralInfoTabContainer",
+				"propertyName": "items",
+				"index": 3
+			},
+			{
+				"operation": "insert",
+				"name": "AkhComment",
+				"values": {
+					"layoutConfig": {
+						"column": 1,
+						"row": 2,
 						"colSpan": 1,
 						"rowSpan": 1
 					},
 					"type": "crt.Input",
-					"label": "$Resources.Strings.PDS_AkhNumber_bk9brfk",
+					"label": "$Resources.Strings.PDS_AkhComment_5cps2zw",
 					"labelPosition": "auto",
-					"control": "$PDS_AkhNumber_bk9brfk",
+					"control": "$PDS_AkhComment_5cps2zw",
 					"multiline": false,
-					"readonly": true
+					"visible": true,
+					"readonly": false,
+					"placeholder": "",
+					"tooltip": ""
 				},
-				"parentName": "GeneralInfoTabContainer",
+				"parentName": "GeneralInfoTab",
 				"propertyName": "items",
-				"index": 4
+				"index": 1
 			}
 		]/**SCHEMA_VIEW_CONFIG_DIFF*/,
 		viewModelConfigDiff: /**SCHEMA_VIEW_MODEL_CONFIG_DIFF*/[
@@ -492,6 +534,16 @@ define("AkhRealtyFreedomUI_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, functi
 						"modelConfig": {
 							"path": "PDS.AkhNumber"
 						}
+					},
+					"PDS_AkhCommission_b9uqxnj": {
+						"modelConfig": {
+							"path": "PDS.AkhCommission"
+						}
+					},
+					"PDS_AkhOfferTypeAkhCommissionPercent": {
+						"modelConfig": {
+							"path": "PDS.AkhOfferTypeAkhCommissionPercent"
+						}
 					}
 				}
 			},
@@ -524,7 +576,13 @@ define("AkhRealtyFreedomUI_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, functi
 					"PDS": {
 						"type": "crt.EntityDataSource",
 						"config": {
-							"entitySchemaName": "AkhRealtyFreedomUI"
+							"entitySchemaName": "AkhRealtyFreedomUI",
+							"attributes": {
+								"AkhOfferTypeAkhCommissionPercent": {
+									"path": "AkhOfferType.AkhCommissionPercent",
+									"type": "ForwardReference"
+								}
+							}
 						},
 						"scope": "page"
 					}
@@ -532,6 +590,7 @@ define("AkhRealtyFreedomUI_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, functi
 			}
 		]/**SCHEMA_MODEL_CONFIG_DIFF*/,
 		handlers: /**SCHEMA_HANDLERS*/[
+			/*when the button is clicked, the method is called*/
 			{
 				request: "MyPushButtonRequest",
 				/* Implementation of the custom query handler. */
@@ -545,6 +604,22 @@ define("AkhRealtyFreedomUI_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, functi
 					return next?.handle(request);
 				}
 			},
+			/*the method works when the values of the price fields are Offer type changed or the commission is recalculated*/
+						{
+				request: "crt.HandleViewModelAttributeChangeRequest",
+				/* The custom implementation of the system query handler. */
+				handler: async (request, next) => {
+					if (request.attributeName === 'PDS_AkhPrice_xolbiws' || 						// if price changed
+					   request.attributeName === 'PDS_AkhOfferTypeAkhCommissionPercent' ) { 		// or percent changed
+						var price = await request.$context.PDS_AkhPrice_xolbiws;
+						var percent = await request.$context.PDS_AkhOfferTypeAkhCommissionPercent;
+						var commission = price * percent / 100;
+						request.$context.PDS_AkhCommission_b9uqxnj = commission;
+					}
+					/* Call the next handler if it exists and return its result. */
+					return next?.handle(request);
+				}
+			}
 		]/**SCHEMA_HANDLERS*/,
 		converters: /**SCHEMA_CONVERTERS*/{}/**SCHEMA_CONVERTERS*/,
 		validators: /**SCHEMA_VALIDATORS*/{}/**SCHEMA_VALIDATORS*/

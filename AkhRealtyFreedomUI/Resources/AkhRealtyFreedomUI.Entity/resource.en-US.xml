@@ -5,6 +5,7 @@
 			<Item Name="Caption" Value="Realty FreedomUI" />
 			<Item Name="Columns.AkhArea.Caption" Value="Area, sq ft" />
 			<Item Name="Columns.AkhComment.Caption" Value="Comment" />
+			<Item Name="Columns.AkhCommission.Caption" Value="Commission" />
 			<Item Name="Columns.AkhCurrency.Caption" Value="Currency" />
 			<Item Name="Columns.AkhManager.Caption" Value="Manager" />
 			<Item Name="Columns.AkhName.Caption" Value="Name" />
