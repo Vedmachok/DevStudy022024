@@ -162,6 +162,34 @@ define("AkhRealtyFreedomUI_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, functi
 			},
 			{
 				"operation": "insert",
+				"name": "Button_AddVisits",
+				"values": {
+					"type": "crt.Button",
+					"caption": "#ResourceString(Button_AddVisits_caption)#",
+					"color": "primary",
+					"disabled": false,
+					"size": "small",
+					"iconPosition": "only-text",
+					"visible": true,
+					"clicked": {
+						"request": "crt.RunBusinessProcessRequest",
+						"params": {
+							"processName": "AkhAddRealtyVisitsProcess",
+							"processRunType": "ForTheSelectedPage",
+							"recordIdProcessParameterName": "RealtyIdParameter"
+						}
+					},
+					"clickMode": "default",
+					"layoutConfig": {},
+					"icon": null,
+					"menuItems": []
+				},
+				"parentName": "CardToggleContainer",
+				"propertyName": "items",
+				"index": 0
+			},
+			{
+				"operation": "insert",
 				"name": "PushMeButton",
 				"values": {
 					"type": "crt.Button",
@@ -179,7 +207,7 @@ define("AkhRealtyFreedomUI_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, functi
 				},
 				"parentName": "CardToggleContainer",
 				"propertyName": "items",
-				"index": 0
+				"index": 1
 			},
 			{
 				"operation": "insert",
@@ -822,6 +850,11 @@ define("AkhRealtyFreedomUI_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, functi
 					"PDS_AkhComment_5cps2zw": {
 						"modelConfig": {
 							"path": "PDS.AkhComment"
+						},
+						"validators": {
+							"required": {
+								"type": "crt.Required"
+							}
 						}
 					},
 					"PDS_AkhManager_yhu5onn": {
@@ -885,6 +918,11 @@ define("AkhRealtyFreedomUI_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, functi
 									}
 								}
 							}
+						}
+					},
+					"PDS_AkhColumn11_j9uek28": {
+						"modelConfig": {
+							"path": "PDS.AkhColumn11"
 						}
 					}
 				}
@@ -961,8 +999,8 @@ define("AkhRealtyFreedomUI_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, functi
 			}
 		]/**SCHEMA_MODEL_CONFIG_DIFF*/,
 		handlers: /**SCHEMA_HANDLERS*/[
-			/*when the button is clicked, the method is called*/
 			{
+				/*when the button is clicked, the method is called*/
 				request: "MyPushButtonRequest",
 				/* Implementation of the custom query handler. */
 				handler: async (request, next) => {
@@ -985,20 +1023,34 @@ define("AkhRealtyFreedomUI_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, functi
 			},
 			/*the method works when the values of the price fields are Offer type changed or the commission is recalculated*/
 						{
-				request: "crt.HandleViewModelAttributeChangeRequest",
-				/* The custom implementation of the system query handler. */
-				handler: async (request, next) => {
-					if (request.attributeName === 'PDS_AkhPrice_xolbiws' || 						// if price changed
-					   request.attributeName === 'PDS_AkhOfferTypeAkhCommissionPercent' ) { 		// or percent changed
-						var price = await request.$context.PDS_AkhPrice_xolbiws;
-						var percent = await request.$context.PDS_AkhOfferTypeAkhCommissionPercent;
-						var commission = price * percent / 100;
-						request.$context.PDS_AkhCommission_b9uqxnj = commission;
-					}
-					/* Call the next handler if it exists and return its result. */
-					return next?.handle(request);
-				}
-			}
+							request: "crt.HandleViewModelAttributeChangeRequest",
+							/* The custom implementation of the system query handler. */
+							handler: async (request, next) => {
+								if (request.attributeName === 'PDS_AkhPrice_xolbiws' || 						// if price changed
+									request.attributeName === 'PDS_AkhOfferTypeAkhCommissionPercent' ) { 		// or percent changed
+									var price = await request.$context.PDS_AkhPrice_xolbiws;
+									var percent = await request.$context.PDS_AkhOfferTypeAkhCommissionPercent;
+									var commission = price * percent / 100;
+									request.$context.PDS_AkhCommission_b9uqxnj = commission;
+								}
+								if (request.attributeName === 'PDS_AkhPrice_xolbiws') {
+									const examination = 10000;
+									const selectedPrice = await request.$context.PDS_AkhPrice_xolbiws;
+									//const selectedStatusId = selectedStatus?.value;
+									const checkingValue = selectedPrice >= examination;
+									/* Check the request status. */
+									if (checkingValue) {
+										/* If the request is new, apply the required validator to the UsrDescription attribute. */
+										request.$context.enableAttributeValidator('PDS_AkhComment_5cps2zw', 'required');
+									} else {
+										/* Do not apply the required validator to the UsrDescription attribute for non-new requests. */
+										request.$context.disableAttributeValidator('PDS_AkhComment_5cps2zw', 'required');
+									}
+								}
+								/* Call the next handler if it exists and return its result. */
+								return next?.handle(request);
+							}
+						}
 		]/**SCHEMA_HANDLERS*/,
 		converters: /**SCHEMA_CONVERTERS*/{}/**SCHEMA_CONVERTERS*/,
 		validators: /**SCHEMA_VALIDATORS*/{

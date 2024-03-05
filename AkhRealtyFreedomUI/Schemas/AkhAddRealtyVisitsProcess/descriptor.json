@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "b305bec3-4681-449c-b028-f54927922780",
+    "Name": "AkhAddRealtyVisitsProcess",
+    "ModifiedOnUtc": "\/Date(1709667019000)\/",
+    "ManagerName": "ProcessSchemaManager",
+    "Caption": "Add Realty Visits process",
+    "DependsOn": []
+  }
+}
