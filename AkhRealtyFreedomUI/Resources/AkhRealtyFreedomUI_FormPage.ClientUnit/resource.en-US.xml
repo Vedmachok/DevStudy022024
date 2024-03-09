@@ -10,6 +10,7 @@
 			<Item Name="LocalizableStrings.addRecord_lozrpec_caption.Value" Value="Добавить" />
 			<Item Name="LocalizableStrings.AreaCannotBeLess.Value" Value="Area cannot be less than 100 sq ft" />
 			<Item Name="LocalizableStrings.Button_AddVisits_caption.Value" Value="Add visits" />
+			<Item Name="LocalizableStrings.Button_jiqwzjt_caption.Value" Value="Run web servise" />
 			<Item Name="LocalizableStrings.Button_pt6dkt5_caption.Value" Value="Кнопка" />
 			<Item Name="LocalizableStrings.Button_px6fgh2_caption.Value" Value="Add visits" />
 			<Item Name="LocalizableStrings.Button_tk957ro_caption.Value" Value="PUSH ME!" />
